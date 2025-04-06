@@ -1,0 +1,30 @@
+public class Turma {
+    private String curso;
+    private String diciplina;
+
+    public String getCurso(){
+        return curso;
+    }
+    public void setCurso(String curso){
+        this.curso = curso;
+    }
+    public String getDiciplina(){
+        return diciplina;
+    }
+    public void setDiciplina(String diciplina){
+        this.diciplina = diciplina;
+    }
+    public void exibeTurma(){
+        System.out.println("Curso: " + curso + " Diciplina: " + diciplina);
+    }
+}
+
+
+public class TesteTurma {
+    public static void main(String[] args){
+        Turma t1 = new Turma();
+        t1.setCurso("Matematica aplicada e computacional");
+        t1.setDiciplina("POO");
+        t1.exibeTurma();
+    }
+}
