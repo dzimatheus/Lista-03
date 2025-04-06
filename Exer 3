@@ -1,0 +1,40 @@
+Professsor, fiquei na dúvida se era para utilizar o código descrito na atividade, ou, usar como exemplo para criar um novo.
+Acabei usando o como exemplo e criei um nome.
+
+public class JavaApp{
+    private String objeto;
+    private String metodo;
+    private String classe;
+
+    public JavaApp(String objeto, String metodo, String classe){
+        this.objeto = objeto;
+        this.metodo = metodo;
+        this.classe = classe;
+    }
+
+    public void conceitoObj(){
+        System.out.println("Conceito de objeto: " + this.objeto);
+    }
+
+    public void conceitoMetodo(){
+        System.out.println("Conceito de metodo: " + this.metodo);
+    }
+
+    public void conceitoClasse(){
+        System.out.println("Conceito de classe :" + this.classe);
+    }
+}
+
+
+public class App {
+    public static void main(String[] args){
+        JavaApp omc = new JavaApp(
+            "Instancia de uma classe", 
+            "E um bloco de codigo que define as acoes que um objeto pode realizar", 
+            "Modelo abstrato usado para definir objetos com atributos e metodos"
+        );
+        omc.conceitoObj();
+        omc.conceitoMetodo();
+        omc.conceitoClasse();
+    }
+}
