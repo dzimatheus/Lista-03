@@ -1,0 +1,61 @@
+public class Fatura {
+    private String numero;
+    private String descricao;
+    private int qntiten;
+    private double preco;
+    
+    public Fatura(String numero, String descricao, int qntiten, double preco){
+        this.numero = numero;
+        this.descricao = descricao;
+        this.qntiten = qntiten;
+        this.preco = preco;
+    }
+
+    public String getNumero(){
+        return this.numero;
+    }
+
+    public void setNumero(String numero){
+        this.numero = numero;
+    }
+
+    public String getDescricao(){
+        return this.descricao;
+    }
+
+    public void setDescricao(String descricao){
+        this.descricao = descricao;
+    }
+
+    public int getQntiten(){
+        return this.qntiten;
+    }
+
+    public void setQntiten(int qntiten){
+        this.qntiten = qntiten;
+    }
+
+    public double getPreco(){
+        return this.preco;
+    }
+
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+
+    public double getQtdeFatura(){
+        return qntiten * preco;
+    }
+}
+
+
+public class UsaFatura {
+    public static void main(String[] args){
+        Fatura f1 = new Fatura("01", "Cabo HDMI", 2, 20);
+        System.out.println("Numero: " + f1.getNumero());
+        System.out.println("Descricao: " + f1.getDescricao());
+        System.out.println("Quantidade de itens: " + f1.getQntiten());
+        System.out.println("Preco: " + f1.getPreco());
+        System.out.println("Fatura: " + f1.getQtdeFatura());
+    }
+}
