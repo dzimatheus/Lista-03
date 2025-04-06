@@ -1,0 +1,20 @@
+public class Livro{
+    private String titulo;
+    private String autor;
+
+    public Livro(String titulo, String autor){
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+
+    public void lerLivro(){
+        System.out.println("Titulo do livro "+ this.titulo + " Nome do autor " + this.autor);
+    }
+}
+
+public class TesteLivro {
+    public static void main(String[] args){
+        Livro l1 = new Livro("O homem de giz", "Linux");
+        l1.lerLivro();
+    }
+}
